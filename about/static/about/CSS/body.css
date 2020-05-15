@@ -1,0 +1,196 @@
+
+.main{
+    /*max-width: 1000px;*/
+    width: auto;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    margin: 0;
+    position: relative;
+  }
+  #home {
+      /*max-width: 100%;*/
+      width: auto;
+      padding-top:50px;
+      height:auto;
+      color: #fff;
+      /*background: url("Images/20181224_133125.jpg") center 0px/cover no-repeat fixed;*/
+      background-image: url('Images/20191005_172743.jpg');
+      background-position-x: center;
+      background-position-y: 0;
+      background-size:cover;
+      /*background-repeat: no-repeat;*/
+      background-attachment: fixed;
+      background-clip: initial;
+      background-origin: initial;
+      background-color: initial;
+
+  }
+  #about {
+      /*max-width: 100%;*/
+      width: auto;
+      padding-top:50px;
+      height:auto;
+      font-size: 22px;
+      color: rgba(75, 75, 75, 0.93);
+      font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+      font-weight: bold;
+
+  }
+  #skills {
+      width: auto;
+      /*max-width: 100%;*/
+      padding-top:50px;
+      height:auto;
+      font-size: 22px;
+      color: rgba(75, 75, 75, 0.93);
+      font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+      font-weight: bold;
+
+  }
+
+  #portfolio {
+      width: auto;
+      /*max-width: 100%;*/
+      margin-top: 2%!important;
+      padding-top:50px;
+      height:auto;
+      font-size: 22px;
+      color: rgba(75, 75, 75, 0.93);
+      font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+      font-weight: bold;
+      background: #00a6b8 !important;
+  }
+
+
+  #contact {
+      width: auto;
+      padding-top:50px;
+      height:auto;
+      font-size: 22px;
+      color: rgba(231, 230, 230, 0.93);
+      font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+      font-weight: bold;
+      background: #cdcdcd !important;
+  }
+
+  #devesh {
+      width: auto;
+      padding-top:20px;
+      padding-bottom: 10px;
+      font-family: 'Nanum Pen Script';
+      font-size: 20px;
+      height:auto;
+      background: #181717 !important;
+  }
+  .devesh{
+      margin-left: 40% ;
+      position: center;
+  }
+  .navbar-inverse .navbar-nav li a{
+      color: white;
+      border: 0;
+      font-family: Arial,serif;
+      /*float: left !important;*/
+      /*font-weight: bold;*/
+  }
+
+  .back{
+       background-image: linear-gradient(to bottom , #c7c7c7, #fffaf5);
+      background-repeat: no-repeat;
+  }
+  .nav-col{
+      border:0;
+      background: transparent;
+  }
+  .nav-text-col{
+      background-color: green !important;
+  }
+
+  .caps{
+        text-transform: uppercase;
+  }
+
+  .anim-text-size{
+      margin-top: 0;
+      font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+      letter-spacing: 2px;
+      color: #f2e9ef;
+      font-size: 40%;
+  }
+
+  .size{
+      font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+      margin-top: 1% !important;
+      font-size: 50px;
+      letter-spacing: 3px;
+      color: #f6f6f6;
+      font-weight: bold;
+  }
+
+  h1{
+      /*margin-right: 10% !important;*/
+      /*margin-top: 3% !important;*/
+      position: relative;
+  }
+
+  .position{
+      /*margin-left: 75%;*/
+      float: right;
+  }
+
+  .head{
+       font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+      color: #0d0d0d;
+      letter-spacing: 2px;
+      font-size: 50px;
+      font-weight: bold;
+      margin-left: auto;
+      /*margin-top: 10%;*/
+
+  }
+  .about-image{
+      margin-left: 10%;
+      width: 70%;
+      height: 40%;
+  }
+
+  .para{
+      letter-spacing: 2px;
+      color: #555555;
+  }
+
+  .btn-s {
+      margin-top: 10%;
+      width: 30%;
+      height: 10%;
+      color: white;
+      font-weight: bold;
+      background: #0096a7!important;
+  }
+
+  .tech-skills{
+      font-family: 'Audiowide';
+      color: #0d0d0d !important;
+      font-size: 30px;
+      margin-left: 20%;
+  }
+  .tech-skills-body{
+      margin-left: 20%;
+      color: black;
+      font-family: 'Advent Pro';
+      letter-spacing: 2px;
+      font-size: 17px;
+  }
+
+  .contact-box{
+      width: auto;
+      height: auto;
+      padding: 50px;
+      margin: 20px;
+  }

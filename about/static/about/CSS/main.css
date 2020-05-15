@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+
+h4{
+    font-family: 'Audiowide';
+    color: #0d0d0d;
+    font-size: 30px;
+}
+
+h5{
+     font-family: 'Advent Pro';
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.text-inside{
+    font-size: 9px;
+    color: white;
+    margin-left: 50%;
+    position: center;
+    font-family: 'Advent Pro';
+}
+
+.skills{
+    width: 500px;
+    margin-top: 10%;
+    margin-left: 20% ;
+    color: black;
+}
+
+.skills li{
+    margin: 20px 0;
+}
+.bar{
+    width: auto;
+    background: black;
+    display: block;
+    height: 10px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10%;
+    /*overflow: hidden;*/
+    /*box-shadow: 0 0 10px #2187e7b3;*/
+}
+.bar span{
+    height: 10px;
+    float: left;
+    background: #2187e7;
+}
+
+.cp{
+    width: 85%;
+    animation: cp 5s;
+}
+.web-d{
+    width: 70%;
+    animation: web-d 5s;
+}
+.photo{
+    width: 80%;
+    animation: photo 5s;
+}
+.ml{
+    width: 50%;
+    animation: ml 5s;
+}
+
+
+@keyframes cp {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+
+@keyframes web-d {
+    0%{
+        width: 0;
+    }
+    100%{
+             width: 70%;
+    }
+}
+@keyframes photo {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes ml {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes animate-positive{
+    0% { width: 0%; }
+}
+@keyframes animate-positive{
+    0% { width: 0%; }
+}

@@ -1,0 +1,138 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Patrick Hand' rel='stylesheet'>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+
+.jumbotron small {
+    color: #FFF;
+}
+.warn{
+    font-family: 'Patrick Hand';
+}
+.container-form{
+    position: center;
+
+}
+
+.fa {
+  padding: 5%;
+  font-size: 30px;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+    border-radius: 50% ;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #c1317a;
+    color: white;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="container container-form">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form action="{% url 'portfolio' %}" method="post">
+    {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input name='name' type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input name='email' type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject</label>
+                            <textarea maxlength="100" name='subject' id="subject" class="form-control" rows="2" cols="25" required="required"
+                                placeholder="Subject"></textarea>
+                            <span id="errMsg" class="warn"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name='message' id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Send Message</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h4>contact Via</h4>
+            <a href="https://www.facebook.com/yash.gautam.1221" target="_blank"><img src="https://img.icons8.com/cute-clipart/64/000000/facebook-new.png"/></a>
+            <a href="https://www.linkedin.com/in/yashgautam/" target="_blank"><img src="https://img.icons8.com/cute-clipart/64/000000/linkedin.png"/></a>
+            <a href="https://www.instagram.com/1221_yashgautam_/" target="_blank"><img src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png"/></a>
+            <a href="mailto:yash.gautam0003@gmail.com" ><img src="https://img.icons8.com/color/48/000000/gmail.png"/></a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+ $(document).ready( function() {
+    var maxLen = 100;
+
+    $('#subject').keypress(function(event){
+        var Length = $("#subject").val().length;
+        var AmountLeft = maxLen - Length;
+        $('#txt-length-left').html(AmountLeft);
+        if(Length >= maxLen){
+            if (event.which != 8) {
+                    $('#errMsg').text('Maximum 100 characters allowed!');
+                return false;
+            }
+        }
+    });
+
+ });
+
+ </script>
+</html>

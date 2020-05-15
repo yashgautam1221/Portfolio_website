@@ -1,0 +1,343 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html style="overflow-x: hidden" >
+<head>
+    <title>Yash Gautam</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{% static 'about/images/favicon.png' %}" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nanum Pen Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{%  static 'about/CSS/body.css' %}">
+    <link rel="stylesheet" href="{% static 'about/CSS/form.css' %}">
+    <link rel="stylesheet" href="{%  static 'about/CSS/style.css'%}">
+    <link rel="stylesheet" href="{%  static 'about/CSS/go_to_top.css'%}">
+    <link rel="stylesheet" href="{%  static 'about/CSS/reset.css'%}">
+    <link rel="stylesheet" href="{% static 'about/CSS/main.css' %}">
+    <link rel="stylesheet" href="{% static 'about/CSS/filter.css' %}">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{% static 'about/JS/form.js' %}"></script>
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" >
+    <a href="#" id="scroll" style="display: none; z-index: 1"><span></span></a>
+    <nav class="navbar navbar-inverse navbar-fixed-top nav-col">
+        <div class="container-fluid ">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse position" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#home" class="main">Home</a></li>
+                      <li><a href="#about" class="main">About</a></li>
+                      <li><a href="#portfolio" class="main">Portfolio</a></li>
+                      <li><a href="#contact" class="main">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="home" class="container-fluid"><!--Home-->
+      <section class="cd-intro">
+        <h1 class="cd-headline push">
+            <span class="caps size">hello i'm yash gautam<br/></span>
+            <span class="cd-words-wrapper anim-text-size caps ">
+                <b class="is-visible">Student</b>
+                <b>Programmer</b>
+                <b>Web developer</b>
+                <b>Photographer</b>
+            </span>
+        </h1>
+      </section>
+    </div>
+    <div class="back">
+        <div id="about" class="container-fluid"><!--About-->
+            <h4>
+                <span class="caps head"><br/>About me</span>
+            </h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">
+                        <p><span class="para"><br/><br>Hello, I'm an Undergraduate Student at Delhi Technological University pursuing B.Tech in Mathematics And Computing.</span></p>
+                        <p><br/><span class="para">I Know how to Code and Develop :) <i class="material-icons">computer</i></span></p>
+                        <p><br/><span class="para">Not Professionally ! But clicking photographs <span class="glyphicon glyphicon-camera"></span> is one thing I am good at. </span></p>
+                        <p><br/><span class="para">Other than this, I'm a Website Developer, Traveller, Foodie, Orator and much more.Maybe I write blog someday too !<br> </span></p>
+                    </div>
+                    <br/><button type="button" class="main btn btn-outline-primary btn-s btn-lg" onclick="window.location.href = '#skills'" >Skills</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'about/CSS/Images/20181224_133125.jpg' %}" class="about-image">
+                </div>
+            </div>
+        </div>
+
+        <!--skills-->
+
+        <div class="row">   <!--skills-->
+            <div class="col-md-1"></div>
+            <div class="col-md-9">
+                <div id="skills" class="container-fluid skills" >
+                    <div class="ldBar" >
+                        <h4 class="caps" data-aos = "fade-down">My Skills</h4>
+                        <li data-aos="fade-up">
+                            <h5>Competitive Programming<br/><span class="bar" data-aos="fade-right"><span class="cp" ><span class="text-inside">85%</span></span> </span> </h5>
+                        </li>
+                        <li data-aos="fade-up" >
+                            <h5>Website Development<span class="bar" data-aos="fade-right"><span class="web-d"><span class="text-inside">70%</span></span> </span> </h5>
+                        </li>
+                        <li data-aos="fade-up" >
+                            <h5>Photography<span class="bar" data-aos="fade-right"><span class="photo" ><span class="text-inside">80%</span></span> </span> </h5>
+                        </li>
+                        <li data-aos="fade-up" >
+                            <h5>Machine Learning<span class="bar" data-aos="fade-right"><span class="ml"><span class="text-inside">50%</span></span> </span> </h5>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <span class="tech-skills caps">Technical Skills<br/></span>
+                    <p class="tech-skills-body" >C++,<br/> python,<br/> Django,<br/>SQL,<br/> HTML,<br/> CSS,<br/> Bootstrap,<br/> Android Studio,<br/> MATLAB,<br/> IBM SPSS</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <span class="tech-skills caps">miscellaneous Skills<br/></span>
+                    <p class="tech-skills-body" >FL Studio,<br/>Virtual DJ,<br/>Adobe Photoshop,<br/></p>
+                </div>
+            </div>
+        </div>
+
+        <!--Portfolio-->
+
+
+        <div id="portfolio" class="container-fluid"><!--Portfolio-->
+            <h4 class="caps head"><center>Portfolio<br/><br/></center></h4>
+
+            <div class="btn-group " role="group" id="myBtnContainer" style="margin-left: 2%">
+                <button type="button" class="btn btn-text" onclick="filterSelection('all')"> Show all</button>
+                <button type="button" class="btn btn-text" onclick="filterSelection('webd')">Website Development</button>
+                <button type="button" class="btn btn-text" onclick="filterSelection('adrd')">Android</button>
+                <button type="button" class="btn btn-text" onclick="filterSelection('pics')">Photography</button>
+            </div>
+
+<!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="column webd">
+                      <div class="content">
+                          <div class="container">
+                              <img class="image" src="{% static 'about/images/tutorials2.jpg' %}" alt="tuts" style="width:400px">
+                              <div class="overlay">
+                                  <div class="text">Tutorial Website </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="column webd">
+                      <div class="content">
+                          <div class="container">
+                          <img class="image" src="{% static 'about/images/portfolio.jpg' %}" alt="tuts" style="width:400px">
+                          <div class="overlay">
+                              <div class="text">Portfolio Website</div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="column webd">
+                      <div class="content">
+                          <div class="container">
+                          <img class="image" src="{% static 'about/images/tutorials.jpg' %}" alt="webd" style="width:400px">
+                          <div class="overlay">
+                              <div class="text">Tutorial Website Homepage</div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="column adrd">
+                      <div class="content">
+                          <div class="container">
+                          <img class="image" src="{% static 'about/images/androdified.jpg' %}" alt="android" style="width:400px">
+                          <div class="overlay">
+                              <div class="text">Android Game Application</div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="column webd">
+                      <div class="content">
+                          <div class="container">
+                          <img class="image" src="{% static 'about/images/birthday.jpg' %}" alt="pics" style="width:400px">
+                          <div class="overlay">
+                              <div class="text">Website for Birthday</div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="column pics">
+                      <div class="content">
+                          <div class="container">
+                          <img class="image" src="{% static 'about/images/CYMERA_20200421_124406.jpg' %}" alt="pics" style="width:400px">
+                          <div class="overlay">
+                              <div class="text">Gulmarg!</div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="column pics">
+                      <div class="content">
+                          <div class="container">
+                          <img class="image" src="{% static 'about/images/CYMERA_20200421_130258.jpg' %}" alt="pics" style="width:400px">
+                          <div class="overlay">
+                              <div class="text">Solan!</div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="column pics">
+                      <div class="content">
+                          <div class="container">
+                          <img class="image" src="{% static 'about/images/pehelgam.jpg' %}" alt="pics" style="width:400px">
+                          <div class="overlay">
+                              <div class="text">Pehelgam!</div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="column pics">
+                    <div class="content">
+                        <div class="container">
+                        <img class="image" src="{% static 'about/images/CYMERA_20200421_130423.jpg' %}" alt="Car" style="width:400px">
+                        <div class="overlay">
+                              <div class="text">Delhi Technological University!</div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contact" class="container-fluid"><!--contact-->
+            <center><h4>Send A Message<br/></h4></center>
+            <div class="container container-form">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="well well-sm">
+                            <form action="{% url 'home' %}" method="post">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name" class="label-name">
+                                                Name</label>
+                                            <input name='name' type="text" class="form-control" id="name"
+                                                   placeholder="Enter name" required="required"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email" class="label-name">
+                                                Email Address</label>
+                                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                                <input name='email' type="email" class="form-control" id="email"
+                                                       placeholder="Enter email" required="required"/></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="subject" class="label-name">
+                                                Subject</label>
+                                            <textarea maxlength="100" name='subject' id="subject" class="form-control"
+                                                      rows="2" cols="25" required="required"
+                                                      placeholder="Subject"></textarea>
+                                            <span id="errMsg" class="warn"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="message" class="label-name">
+                                                Message</label>
+                                            <textarea name='message' id="message" class="form-control" rows="9"
+                                                      cols="25" required="required"
+                                                      placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Send
+                                            Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 container-form" >
+                        <h4>contact Via</h4>
+                        <a href="https://www.facebook.com/yash.gautam.1221" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/yashgautam/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/1221_yashgautam_/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                        <a href="mailto:yash.gautam0003@gmail.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="devesh">
+            <span class="devesh">Looking for More Skilled Person? <a href="http://www.deveshsingh.ml/" target="_blank">Devesh Singh</a></span>
+        </div>
+    </div>
+    <script src="{% static 'about/JS/form.js' %}"></script>
+    <script src="{%  static 'about/JS/filter.js'%}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{% static 'about/JS/trigger_animation_onscroll.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{%  static 'about/JS/tabs.js'%}"></script>
+    <script src="{%  static 'about/JS/go_to_top.js'%}"></script>
+    <script src="{%  static 'about/JS/jquery-2.1.1.js'%}"></script>
+    <script src="{%  static 'about/JS/main.js'%}"></script>
+    <script src="{%  static 'about/JS/modernizr.js'%}"></script>
+    <script src="{%  static 'about/JS/sidenav.js'%}"></script>
+
+</body>
+</html>
